@@ -1,0 +1,10 @@
+W czym moge pomoc:
+[1] Ladnie Pani dzisiaj wyglada. Poprosze cos tam
+[2] Dawaj mi to cos tam
+[3] Poprosze cos tam
+Prosze bardzo, poprosze iles tam zl:
+[1] Prosze bardzo tu jest ta kwota, reszty nie trzeba
+[2] Co? Ile? Nie zaplace tyle! Dowidzenia!
+[3] Prosze tu jest odliczone
+Dziekuje bardzo i zpraszam Ponownie
+KONIEC

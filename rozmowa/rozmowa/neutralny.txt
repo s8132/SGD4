@@ -1,0 +1,14 @@
+Dzien dobry:
+[1] Dzien dobry
+[2] Siema
+[3] Czesc
+Przepraszam, ale czy my sie znamy
+[1] Tak
+[2] Nie spadaj
+[3] Nie, przepraszam pomylilem sie
+Nie ma problemu, czy Pan chcialby cos kupic
+[1] Tak, poprosze to
+[2] Nie spadaj
+[3] Nie dziekuje
+Dziekuje, dowidzenia
+KONIEC
