@@ -6,12 +6,28 @@
 #include <stdlib.h>
 #include <fstream>
 #include <string>
+#include <locale>
 
 using namespace std;
 
+string intToString(int n){
+	
+	string tmp;
+
+	if(n<0){
+		tmp = "-";
+		n = -n;
+	}
+	if(n>9) tmp += intToString(n/10);
+	tmp += n%10+48;
+
+	return tmp;
+}
+
+
 int main(int argc, char* args[]){
 
-	string neutralnyText, negatywnyText, pozytywnyText;
+	string text;
 	bool done=true;
 	int nastawienie = 1, odpowiedz;
 	/*
@@ -21,52 +37,41 @@ int main(int argc, char* args[]){
 		2 - pozytywne
 	*/
 
-	fstream neutralny( "neutralny.txt", std::ios::in );
-	fstream negatywny( "negatywny.txt", std::ios::in );
-	fstream pozytywny( "pozytywny.txt", std::ios::in );
+	locale myloc("Polish");
+	locale oldloc = locale::global(myloc);
 
+	int wezel=0, wybor;
+	char *str;
+
+	fstream plik( "test.txt", std::ios::in );
+	
 	while(done){
-		for(int i=0; i<4; i++){
-			if(nastawienie==0){
-				getline(negatywny, negatywnyText);
-				if(negatywnyText=="KONIEC"){
-					done = false;
-					break;
+		while(!plik.eof()){
+			getline(plik, text);
+			if(text==intToString(wezel)){
+				for(int j=0; j<4; j++){
+					getline(plik, text);
+					if(text=="KONIEC"){
+						done = false;
+						break;
+					}
+					cout << text << endl;
 				}
-				cout << negatywnyText << endl;
-			}
-			if(nastawienie==1){
-				getline(neutralny, neutralnyText);
-				if(neutralnyText=="KONIEC"){
-					done = false;
-					break;
-				}
-				cout << neutralnyText << endl;
-			}
-			if(nastawienie==2){
-				getline(pozytywny, pozytywnyText);
-				if(pozytywnyText=="KONIEC"){
-					done = false;
-					break;
-				}
-				cout << pozytywnyText << endl;
+				break;
 			}
 		}
+
 		if(done==false){
 			break;
 		}
 
-		cin >> odpowiedz;
-
-		if(odpowiedz==1){
-			if(nastawienie<2) nastawienie++;
-			else nastawienie=2;
-		}
-		if(odpowiedz==2){
-			if(nastawienie>0) nastawienie=0;
-			else nastawienie=0;
-		}
+		cout << "Dokanj wyboru: ";
+		cin>>wybor;
+		wezel = wezel*3+wybor;
+		//cout << "Wezel: " << wezel;
 	}
+	
+	cout << "\nKONIEC (Tu teraz dziejê siê dalsza akcja)" << endl; 
 	getch();
 
 	return 0;

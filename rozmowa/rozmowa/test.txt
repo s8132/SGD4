@@ -1,0 +1,48 @@
+0
+Witaj ¿ó³todziobie:
+[1] Witaj mistrzu
+[2] Czeœæ ktoœTam
+[3] Sam jesteœ ¿ó³todziobem
+1
+Co Ciê do mnie sprowadza?
+[1] ktoœTam planuje na Ciebie atak mistrzu. Przybywam by Ciê ostrzec
+[2] Przybywam ¿eby Ci powiedzieæ, ¿e to ju¿ jest Twój koniec! Mi nic tam do tego
+[3] Umrzesz, w³aœnie teraz. ¯o³nierze ATAK!!!
+2
+Mo¿e trochê szacunku dla swojego mistrza?!
+[1] Przepraszam mistrzu, s³ysza³em ¿e ju¿ nie jesteœ wielki
+[2] Ludzie mówi¹ namieœcie, ¿e starzejesz siê i jesteœ cienki
+[3] Mam nowego mistrza, spadaj starcze!
+3
+Jak œmiesz tak do mnie mówiæ?
+[1] Wybacz mi mistrzu, by³em ciekaw Twojej reakcji
+[2] Przepraszam, na mieœcie mówi¹, ¿e ju¿ przeros³em swego mistrza
+[3] Walcz lesczu
+4
+Musisz mnie broniæ. ChodŸ dam Ci moj¹ star¹ broñ! (Dostajesz now¹ broñ obroñ mistrza przed wrogiem)
+KONIEC
+5
+Wiedzia³em, ¿e kiedyœ to nadejdzie. Powiedz mi szczegó³y, a wynagrodze Ciê chojnie.
+KONIEC
+6
+Uda³o Ci siê zabiæ wroga, ale roz³oszczony ca³¹ sytuacj¹ wybi³ trochê Twojego wojska
+KONIEC
+7
+komputerMowi 7
+Zapamiêtaj sobie ch³opcze ¿e ja zawsze bêdê dla Ciebie wielki
+KONIEC
+8
+A to ciekawe! Powiedz mi jeszcze co mówi¹ na mieœcie.
+KONIEC
+9
+Rozgniewa³eœ swojego mistrza, który pokaza³ swoj¹ si³ê. Giniesz!
+KONIEC
+10
+Masz Ty poczucie humoru. Nie obijaj siê idziemy na trening.
+KONIEC
+11
+Ooo a to ciekawe! Chodz do baru opowiesz mi jeszcze co mówi¹ na mieœcie.
+KONIEC
+12
+Roz³oœci³eœ swojego przeciwnika, który Ciê zabi³. Giniesz!
+KONIEC
